@@ -52,4 +52,5 @@ jobs:
         with:
           app-name: ${{env.AZURE_FUNCTIONAPP_NAME}}
           package: './downloaded-app'
+          sku: 'flexconsumption'
           publish-profile: ${{secrets.AZURE_FUNCTIONAPP_PUBLISH_PROFILE}}
